@@ -1,5 +1,9 @@
 # Diff-Focus Chrome Extension
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/diff-focus-chrome?style=social)](https://github.com/yksanjo/diff-focus-chrome/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/diff-focus-chrome.svg)](https://github.com/yksanjo/diff-focus-chrome/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/diff-focus-chrome.svg)](https://github.com/yksanjo/diff-focus-chrome/issues)
+[![Last commit](https://img.shields.io/github/last-commit/yksanjo/diff-focus-chrome.svg)](https://github.com/yksanjo/diff-focus-chrome/commits/main)
+
+
 Chrome extension for GitHub PR context. Analyze code diffs directly on GitHub Pull Request pages and get instant context cards with risk assessment.
 
 ## Features
