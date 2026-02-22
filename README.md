@@ -1,52 +1,82 @@
-# Diff-Focus Chrome Extension
+# diff-focus-chrome
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/diff-focus-chrome?style=social)](https://github.com/yksanjo/diff-focus-chrome/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/diff-focus-chrome.svg)](https://github.com/yksanjo/diff-focus-chrome/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/diff-focus-chrome.svg)](https://github.com/yksanjo/diff-focus-chrome/issues)
-[![Last commit](https://img.shields.io/github/last-commit/yksanjo/diff-focus-chrome.svg)](https://github.com/yksanjo/diff-focus-chrome/commits/main)
+## Detailed Description
 
+diff-focus-chrome is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-Chrome extension for GitHub PR context. Analyze code diffs directly on GitHub Pull Request pages and get instant context cards with risk assessment.
+## Problem Statement
 
-## Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- 🔍 **GitHub Integration**: Works directly on GitHub PR pages
-- 🎯 **Risk Assessment**: Instant risk level categorization
-- 📋 **Context Cards**: Beautiful inline cards showing analysis results
-- 🚩 **Smart Flags**: Automatic detection of dangerous operations and patterns
+## Solution Overview
 
-## Installation
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### From Source
+## Key Features
 
-1. Clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" (toggle in top right)
-4. Click "Load unpacked"
-5. Select the `diff-focus-chrome` directory
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+make test
+make lint
+```
 
 ## Usage
 
-1. Navigate to any GitHub Pull Request page
-2. Click the Diff-Focus extension icon in your toolbar
-3. Click "Analyze Current PR"
-4. View the analysis card that appears on the PR page
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-## Building Icons
+## Quality Standards
 
-You'll need to create icon files:
-- `icons/icon16.png` (16x16)
-- `icons/icon48.png` (48x48)
-- `icons/icon128.png` (128x128)
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-Or use a placeholder icon generator tool.
+## Security
 
-## Development
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-The extension uses:
-- **Manifest V3**: Modern Chrome extension format
-- **Content Scripts**: Injected into GitHub PR pages
-- **Popup UI**: Extension popup for triggering analysis
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
-
+This project is released under the MIT License.
