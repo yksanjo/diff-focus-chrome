@@ -6,11 +6,16 @@ on:
     branches: [main, master]
 
 jobs:
-  markdown:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v18
+      - uses: actions/setup-node@v4
         with:
-          globs: |
-            **/*.md
+          node-version: 20
+      - name: Validate manifest.json
+        run: node -e "JSON.parse(require('fs').readFileSync('manifest.json','utf8')); console.log('manifest.json OK')"
+      - name: Syntax-check extension scripts
+        run: |
+          node --check content.js
+          node --check popup.js
